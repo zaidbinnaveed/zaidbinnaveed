@@ -1,0 +1,69 @@
+name: Refresh profile assets
+
+on:
+  schedule:
+    # 04:17 UTC daily — off the hour, avoids the top-of-hour scheduling pileup.
+    - cron: "17 4 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "assets/portrait_source.*"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile-assets
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate stats + language + calendar + streak SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_stats.py --login zaidbinnaveed
+
+      - name: Generate section headers
+        run: python scripts/generate_headers.py
+
+      - name: Generate ASCII portrait
+        run: python scripts/generate_portrait.py
+        # A missing source photo is a hard stop everywhere else in this
+        # pipeline, but shouldn't fail the whole daily refresh once a
+        # portrait already exists in the repo — only regenerate it when
+        # the source image is actually present.
+        continue-on-error: true
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git add assets
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh generated profile assets"
+          git push

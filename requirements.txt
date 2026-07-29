@@ -1,0 +1,8 @@
+requests==2.32.3
+pillow==10.4.0
+numpy==2.1.1
+opencv-python-headless==4.10.0.84
+rembg==2.0.59
+onnxruntime==1.19.2
+fonttools==4.53.1
+brotli==1.1.0
