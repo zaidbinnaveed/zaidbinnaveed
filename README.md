@@ -41,9 +41,9 @@ ML systems in production.
 
 | Project | Description | Stack |
 |---|---|---|
-| [`repo-name`](https://github.com/zaidbinnaveed/repo-name) | One line on the problem it solves, not what libraries it imports | e.g. PyTorch, OpenCV |
-| [`repo-name`](https://github.com/zaidbinnaveed/repo-name) | — | — |
-| [`repo-name`](https://github.com/zaidbinnaveed/repo-name) | — | — |
+| [`Derm-AI-Nexus`](https://github.com/zaidbinnaveed/Derm-AI-Nexus) | Classifies skin conditions from images and recommends next steps | Python, TensorFlow/PyTorch |
+| [`Moviefy`](https://github.com/zaidbinnaveed/Moviefy) | Recommends movies using cosine similarity over content features | Python, scikit-learn, pandas |
+| [`Spidey`](https://github.com/zaidbinnaveed/Spidey) | Web crawler for structured data extraction | Python, Requests/Scrapy |
 
 <br/>
 
