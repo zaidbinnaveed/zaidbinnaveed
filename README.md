@@ -81,8 +81,8 @@ My current work is centered on turning ML experiments into software another pers
 
 <img src="./assets/headers/contact.svg" alt="Contact"/>
 
+[Portfolio](https://zaid-portfolio-drab.vercel.app/) ·
 [LinkedIn](https://www.linkedin.com/in/zaid-bin-naveed-b34559293/) ·
-[Email](mailto:zaidbinnaveed04@gmail.com) ·
-Portfolio available privately on request
+[Email](mailto:zaidbinnaveed04@gmail.com)
 
 <sub>The visual assets and repository statistics are generated from this repository and refreshed daily by <a href="./.github/workflows/refresh.yml">GitHub Actions</a>; no third-party statistics widgets are used.</sub>
