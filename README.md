@@ -36,7 +36,7 @@ My current work is centered on turning ML experiments into software another pers
 | [**HireSense AI**](https://github.com/zaidbinnaveed/HireSense-AI) | Adaptive mock interviews with streamed LLM responses and structured feedback | React, TypeScript, FastAPI, Groq, SSE |
 | [**Spidey**](https://github.com/zaidbinnaveed/Spidey) | Parallel depth-limited crawling, a thread-safe inverted index, and a live operations dashboard | Python, FastAPI, React, TypeScript |
 | [**Movify**](https://github.com/zaidbinnaveed/Movify) | Explainable content-based and item-to-item movie recommendations | Python, scikit-learn, pandas, TF-IDF |
-| [**Derm Nexus AI**](https://github.com/zaidbinnaveed/Derm-Nexus-AI) | Academic image-classification pipeline with training, evaluation, inference, and a web interface | Python, TensorFlow, Next.js, TypeScript |
+| [**Derm Nexus AI**](https://github.com/zaidbinnaveed/Derm-Nexus-AI) | Academic image-classification pipeline with training, evaluation, inference, and a web interface | Python, PyTorch, Next.js, TypeScript |
 
 > These repositories are presented as projects and prototypes at their documented maturity—not as production systems unless the repository says otherwise.
 
@@ -44,7 +44,7 @@ My current work is centered on turning ML experiments into software another pers
 
 ### Working toolkit
 
-**Machine learning:** Python · pandas · NumPy · scikit-learn · TensorFlow · Jupyter  
+**Machine learning:** Python · pandas · NumPy · scikit-learn · PyTorch · Jupyter  
 **Applied AI:** Computer vision · Recommender systems · LLM applications · Evaluation · Data pipelines  
 **Product engineering:** React · TypeScript · Next.js · FastAPI · REST · Server-Sent Events  
 **Delivery:** Git · GitHub Actions · Vercel · Render · Technical documentation
