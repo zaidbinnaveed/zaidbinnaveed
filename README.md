@@ -32,7 +32,7 @@ My current work is centered on turning ML experiments into software another pers
 | Project | What it demonstrates | Core stack |
 |---|---|---|
 | [**Cereberus**](https://github.com/zaidbinnaveed/Cereberus) | Local face-gated access prototype with blink liveness, guided enrollment, an operator console, and audit logging | Python, OpenCV, React, Vite |
-| [**FlyRank ML Internship**](https://github.com/zaidbinnaveed/FlyRank-ML-Internship) | Reproducible content-opportunity scoring research using search-performance data | Python, Jupyter, pandas, Hugging Face |
+| [**FlyRank ML Internship**](https://github.com/zaidbinnaveed/FlyRank-ML-Internship) | Content-opportunity scoring with 0.74 precision@50 on a 30k-row anonymized client-holdout evaluation | Python, Jupyter, pandas, Hugging Face |
 | [**HireSense AI**](https://github.com/zaidbinnaveed/HireSense-AI) | Adaptive mock interviews with streamed LLM responses and structured feedback | React, TypeScript, FastAPI, Groq, SSE |
 | [**Spidey**](https://github.com/zaidbinnaveed/Spidey) | Parallel depth-limited crawling, a thread-safe inverted index, and a live operations dashboard | Python, FastAPI, React, TypeScript |
 | [**Movify**](https://github.com/zaidbinnaveed/Movify) | Explainable content-based and item-to-item movie recommendations | Python, scikit-learn, pandas, TF-IDF |
