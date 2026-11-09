@@ -10,44 +10,43 @@
 
 ### Zaid Bin Naveed
 
-**Artificial Intelligence undergraduate at FAST NUCES Karachi · Machine Learning Intern at FlyRank**
+**AI/ML Engineer** · AI Automation Engineer at **Hemzo Media** · BS Artificial Intelligence, **FAST NUCES** (2027)
 
-I build applied AI systems across computer vision, recommender systems, information retrieval, and LLM-backed products. I care about the less glamorous parts that make a project credible: explicit constraints, reproducible setup, inspectable evaluation, and an interface that communicates what the system can—and cannot—do.
-
-My current work is centered on turning ML experiments into software another person can run, inspect, and improve.
+I build applied AI systems (LLM agents, retrieval, computer vision, and evaluation tooling) and I care most about the part that makes them trustworthy: a measurable claim, a reproducible setup, and an honest statement of what the system cannot do.
 
 <br/>
 
 <img src="./assets/headers/current-work.svg" alt="Current work"/>
 
-- Building a content-opportunity scoring capstone from Google Search Console performance data at **FlyRank**
-- Developing local-first computer-vision prototypes with clearly documented privacy and security limits
-- Exploring explainable recommenders, retrieval systems, and streamed LLM product experiences
-- Completing a **BS in Artificial Intelligence** at **FAST NUCES Karachi** (2023–2027)
+- **Hemzo Media** (Sep 2026 – present): designing agentic workflows and LLM-backed automation pipelines in production.
+- **HealWright**: self-healing Playwright selectors that verify every heal before trusting it.
+- **FAST NUCES**: final year of a BS in Artificial Intelligence (computer vision, AI engineering, agentic systems).
+
+Previously: **AI Intern at FlyRank AI** (Jun – Aug 2026), retrieval evaluation and a content-opportunity scoring model.
 
 <br/>
 
 <img src="./assets/headers/featured-projects.svg" alt="Featured projects"/>
 
-| Project | What it demonstrates | Core stack |
-|---|---|---|
-| [**Cereberus**](https://github.com/zaidbinnaveed/Cereberus) | Local face-gated access prototype with blink liveness, guided enrollment, an operator console, and audit logging | Python, OpenCV, React, Vite |
-| [**FlyRank ML Internship**](https://github.com/zaidbinnaveed/FlyRank-ML-Internship) | Content-opportunity scoring with 0.74 precision@50 on a 30k-row anonymized client-holdout evaluation | Python, Jupyter, pandas, Hugging Face |
-| [**HireSense AI**](https://github.com/zaidbinnaveed/HireSense-AI) | Adaptive mock interviews with streamed LLM responses and structured feedback | React, TypeScript, FastAPI, Groq, SSE |
-| [**Spidey**](https://github.com/zaidbinnaveed/Spidey) | Parallel depth-limited crawling, a thread-safe inverted index, and a live operations dashboard | Python, FastAPI, React, TypeScript |
-| [**Movify**](https://github.com/zaidbinnaveed/Movify) | Explainable content-based and item-to-item movie recommendations | Python, scikit-learn, pandas, TF-IDF |
-| [**Derm Nexus AI**](https://github.com/zaidbinnaveed/Derm-Nexus-AI) | Academic image-classification pipeline with training, evaluation, inference, and a web interface | Python, PyTorch, Next.js, TypeScript |
+| Project | What it shows | Evidence | Stack |
+|---|---|---|---|
+| [**HealWright**](https://github.com/zaidbinnaveed/HealWright) | Pytest-Playwright plugin that heals broken selectors, replays the action in a sandbox to prove it, and writes a reviewable patch | 99.2% true heal rate, **0 false heals** on traps, 100% precision across a 50-scenario frozen benchmark | Python, Playwright, LibCST, FastAPI, React |
+| [**Shakespearean LLM**](https://github.com/zaidbinnaveed/AI-Engineering-Assignment-01) | Decoder-only transformer built from mathematical primitives, no `transformers` library | 809,984 params, val perplexity 10.36, 331 tests passing · [write-up](https://medium.com/@zaidbinnaveed04/building-gpt-from-scratch-the-mathematics-architecture-training-and-engineering-behind-our-8e13a74ea747) | PyTorch, FastAPI, React |
+| [**Cereberus**](https://github.com/zaidbinnaveed/Cereberus) | Local-first face-gated access control with blink liveness, five explicit decision states, and an audit log | Unit tests for engine states, storage, and endpoints | Python, OpenCV, face_recognition, React |
+| [**FlyRank Content Scoring**](https://github.com/zaidbinnaveed/FlyRank-ML-Internship) | Ranks content for editorial refresh with leakage checks and per-item reason codes | Precision@50 of 0.74 on a 30k-row client-group holdout | Python, scikit-learn, pandas |
+| [**Spidey**](https://github.com/zaidbinnaveed/Spidey) | Parallel crawler with semaphore-gated fetching, a thread-safe inverted index, and SSE telemetry | Live pause/resume/seed control under concurrency | Python, FastAPI, React, TypeScript |
+| [**HireSense AI**](https://github.com/zaidbinnaveed/HireSense-AI) | Level-adaptive mock interviewer with streamed responses and a JSON-schema scorecard | Four seniority tracks, ten domains | FastAPI, Groq (Llama 3.3 70B), React |
 
-> These repositories are presented as projects and prototypes at their documented maturity—not as production systems unless the repository says otherwise.
+Also: [**Movify**](https://github.com/zaidbinnaveed/Movify) (explainable recommenders) · [**Derm Nexus AI**](https://github.com/zaidbinnaveed/Derm-Nexus-AI) (EfficientNet-B3 lesion classifier, end to end)
 
 <br/>
 
 ### Working toolkit
 
-**Machine learning:** Python · pandas · NumPy · scikit-learn · PyTorch · Jupyter  
-**Applied AI:** Computer vision · Recommender systems · LLM applications · Evaluation · Data pipelines  
+**Machine learning:** Python · PyTorch · scikit-learn · pandas · NumPy · OpenCV  
+**Applied AI:** LLM agents · RAG and retrieval · Computer vision · Evaluation and benchmarking · Recommender systems  
 **Product engineering:** React · TypeScript · Next.js · FastAPI · REST · Server-Sent Events  
-**Delivery:** Git · GitHub Actions · Vercel · Render · Technical documentation
+**Delivery:** Git · GitHub Actions · Docker · Vercel · Railway · Render
 
 <br/>
 
