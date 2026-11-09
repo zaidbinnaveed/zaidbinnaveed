@@ -34,13 +34,18 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate stats + language + calendar + streak SVGs
+      - name: Generate stats + language + calendar SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_stats.py --login zaidbinnaveed
 
       - name: Generate section headers
         run: python scripts/generate_headers.py
+
+      - name: Generate hero and project cards
+        run: |
+          python scripts/generate_hero.py
+          python scripts/generate_cards.py
 
       - name: Generate ASCII portrait
         run: python scripts/generate_portrait.py

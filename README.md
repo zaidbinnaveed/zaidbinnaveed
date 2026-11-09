@@ -1,22 +1,8 @@
-<div align="center">
-
-<img src="./assets/portrait.svg" alt="Animated ASCII portrait of Zaid Bin Naveed" width="620"/>
-
-</div>
-
-<br/>
-
-<img src="./assets/headers/introduction.svg" alt="Introduction"/>
-
-### Zaid Bin Naveed
-
-**AI/ML Engineer** · AI Automation Engineer at **Hemzo Media** · BS Artificial Intelligence, **FAST NUCES** (2027)
+<img src="./assets/hero.svg" alt="Zaid Bin Naveed, AI/ML Engineer. A causal self-attention map computed over the letters of the name, drawn in the viridis colormap." width="100%"/>
 
 I build applied AI systems (LLM agents, retrieval, computer vision, and evaluation tooling) and I care most about the part that makes them trustworthy: a measurable claim, a reproducible setup, and an honest statement of what the system cannot do.
 
-<br/>
-
-<img src="./assets/headers/current-work.svg" alt="Current work"/>
+<img src="./assets/headers/now.svg" alt="Now" width="100%"/>
 
 - **Hemzo Media** (Sep 2026 – present): designing agentic workflows and LLM-backed automation pipelines in production.
 - **HealWright**: self-healing Playwright selectors that verify every heal before trusting it.
@@ -24,64 +10,48 @@ I build applied AI systems (LLM agents, retrieval, computer vision, and evaluati
 
 Previously: **AI Intern at FlyRank AI** (Jun – Aug 2026), retrieval evaluation and a content-opportunity scoring model.
 
-<br/>
+<img src="./assets/headers/selected-work.svg" alt="Selected work" width="100%"/>
 
-<img src="./assets/headers/featured-projects.svg" alt="Featured projects"/>
+<p>
+  <a href="https://github.com/zaidbinnaveed/HealWright"><img src="./assets/cards/healwright.svg" alt="HealWright: pytest-playwright plugin. 0 false heals on trap scenarios; 99.2% true heal rate, 100% precision on a 50-scenario frozen benchmark." width="49%"/></a>
+  <a href="https://github.com/zaidbinnaveed/AI-Engineering-Assignment-01"><img src="./assets/cards/shakespeare-llm.svg" alt="Shakespearean LLM: decoder-only transformer from scratch. Validation perplexity 10.36; 809,984 parameters; 331 tests passing." width="49%"/></a>
+</p>
+<p>
+  <a href="https://github.com/zaidbinnaveed/Cereberus"><img src="./assets/cards/cereberus.svg" alt="Cereberus: local-first face-gated access control with blink liveness, five explicit decision states and an audit log." width="49%"/></a>
+  <a href="https://github.com/zaidbinnaveed/FlyRank-ML-Internship"><img src="./assets/cards/flyrank.svg" alt="FlyRank Content Scoring: precision@50 of 0.74 on a 30k-row client-group holdout, with leakage checks and reason codes." width="49%"/></a>
+</p>
+<p>
+  <a href="https://github.com/zaidbinnaveed/Spidey"><img src="./assets/cards/spidey.svg" alt="Spidey: parallel crawler with semaphore-gated fetching, a thread-safe inverted index and live SSE telemetry." width="49%"/></a>
+  <a href="https://github.com/zaidbinnaveed/HireSense-AI"><img src="./assets/cards/hiresense.svg" alt="HireSense AI: level-adaptive LLM mock interviewer, four seniority tracks by ten domains, streamed responses and a JSON-schema scorecard." width="49%"/></a>
+</p>
 
-| Project | What it shows | Evidence | Stack |
-|---|---|---|---|
-| [**HealWright**](https://github.com/zaidbinnaveed/HealWright) | Pytest-Playwright plugin that heals broken selectors, replays the action in a sandbox to prove it, and writes a reviewable patch | 99.2% true heal rate, **0 false heals** on traps, 100% precision across a 50-scenario frozen benchmark | Python, Playwright, LibCST, FastAPI, React |
-| [**Shakespearean LLM**](https://github.com/zaidbinnaveed/AI-Engineering-Assignment-01) | Decoder-only transformer built from mathematical primitives, no `transformers` library | 809,984 params, val perplexity 10.36, 331 tests passing · [write-up](https://medium.com/@zaidbinnaveed04/building-gpt-from-scratch-the-mathematics-architecture-training-and-engineering-behind-our-8e13a74ea747) | PyTorch, FastAPI, React |
-| [**Cereberus**](https://github.com/zaidbinnaveed/Cereberus) | Local-first face-gated access control with blink liveness, five explicit decision states, and an audit log | Unit tests for engine states, storage, and endpoints | Python, OpenCV, face_recognition, React |
-| [**FlyRank Content Scoring**](https://github.com/zaidbinnaveed/FlyRank-ML-Internship) | Ranks content for editorial refresh with leakage checks and per-item reason codes | Precision@50 of 0.74 on a 30k-row client-group holdout | Python, scikit-learn, pandas |
-| [**Spidey**](https://github.com/zaidbinnaveed/Spidey) | Parallel crawler with semaphore-gated fetching, a thread-safe inverted index, and SSE telemetry | Live pause/resume/seed control under concurrency | Python, FastAPI, React, TypeScript |
-| [**HireSense AI**](https://github.com/zaidbinnaveed/HireSense-AI) | Level-adaptive mock interviewer with streamed responses and a JSON-schema scorecard | Four seniority tracks, ten domains | FastAPI, Groq (Llama 3.3 70B), React |
+The transformer has a long-form [write-up on Medium](https://medium.com/@zaidbinnaveed04/building-gpt-from-scratch-the-mathematics-architecture-training-and-engineering-behind-our-8e13a74ea747). Also: [**Movify**](https://github.com/zaidbinnaveed/Movify) (explainable recommenders) · [**Derm Nexus AI**](https://github.com/zaidbinnaveed/Derm-Nexus-AI) (EfficientNet-B3 lesion classifier, end to end).
 
-Also: [**Movify**](https://github.com/zaidbinnaveed/Movify) (explainable recommenders) · [**Derm Nexus AI**](https://github.com/zaidbinnaveed/Derm-Nexus-AI) (EfficientNet-B3 lesion classifier, end to end)
-
-<br/>
-
-### Working toolkit
+<img src="./assets/headers/toolkit.svg" alt="Toolkit" width="100%"/>
 
 **Machine learning:** Python · PyTorch · scikit-learn · pandas · NumPy · OpenCV  
 **Applied AI:** LLM agents · RAG and retrieval · Computer vision · Evaluation and benchmarking · Recommender systems  
 **Product engineering:** React · TypeScript · Next.js · FastAPI · REST · Server-Sent Events  
 **Delivery:** Git · GitHub Actions · Docker · Vercel · Railway · Render
 
-<br/>
-
-### Engineering principles
+<img src="./assets/headers/principles.svg" alt="Principles" width="100%"/>
 
 1. **State the constraint first.** Privacy, latency, data access, and failure modes should shape the solution.
 2. **Keep evidence close to the claim.** Setup, architecture, limitations, and evaluation belong beside the code.
 3. **Treat UX as part of correctness.** A model output is only useful when a person can understand and act on it.
 4. **Prefer honest scope over inflated language.** Prototype, academic project, and production system are different things.
 
-<br/>
+<img src="./assets/headers/activity.svg" alt="Activity" width="100%"/>
 
-<img src="./assets/headers/github-statistics.svg" alt="GitHub statistics"/>
+<img src="./assets/year.svg" alt="GitHub contribution calendar for this year" width="100%"/>
 
-<p align="center">
-  <img src="./assets/stats.svg" alt="GitHub activity statistics" width="49%"/>
-  <img src="./assets/langs.svg" alt="Most-used repository languages" width="49%"/>
+<p>
+  <img src="./assets/stats.svg" alt="GitHub activity totals for this year" width="49%"/>
+  <img src="./assets/langs.svg" alt="Language mix across public repositories, by bytes" width="49%"/>
 </p>
 
-<p align="center">
-  <img src="./assets/streak.svg" alt="Contribution streak" width="49%"/>
-</p>
+<img src="./assets/headers/contact.svg" alt="Contact" width="100%"/>
 
-<br/>
+[Portfolio](https://zaid-portfolio-drab.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/zaid-bin-naveed-b34559293/) · [Email](mailto:zaidbinnaveed04@gmail.com) · [X](https://x.com/ZaidBinNaveed)
 
-<img src="./assets/headers/timeline.svg" alt="Contribution timeline"/>
-
-<img src="./assets/year.svg" alt="GitHub contribution calendar"/>
-
-<br/>
-
-<img src="./assets/headers/contact.svg" alt="Contact"/>
-
-[Portfolio](https://zaid-portfolio-drab.vercel.app/) ·
-[LinkedIn](https://www.linkedin.com/in/zaid-bin-naveed-b34559293/) ·
-[Email](mailto:zaidbinnaveed04@gmail.com)
-
-<sub>The visual assets and repository statistics are generated from this repository and refreshed daily by <a href="./.github/workflows/refresh.yml">GitHub Actions</a>; no third-party statistics widgets are used.</sub>
+<sub>Every image on this page is generated by the scripts in this repository and refreshed daily by <a href="./.github/workflows/refresh.yml">GitHub Actions</a>; no third-party widgets. The palette is viridis, the colormap of the transformer's own attention plots.</sub>

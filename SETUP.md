@@ -13,10 +13,11 @@ edit the scripts and re-run.
 2. Push to `main`. The `push` trigger in `refresh.yml` runs the full
    pipeline once, replacing every placeholder in `assets/` with real
    output. After that it just refreshes daily.
-3. **Featured Projects**: the table in `README.md` is a template.
-   Replace it with the repos you actually want surfaced — this script
-   set intentionally doesn't auto-select "featured" repos, since that's
-   an editorial decision, not a data one.
+3. **Selected work**: the project cards are defined in the `CARDS` list
+   in `scripts/generate_cards.py`, and laid out two per row in
+   `README.md`. Featured repos are an editorial decision, not a data
+   one, so they are not auto-selected. Copy each card's figures from
+   that repo's README so the claim and its evidence stay in sync.
 
 ## Local development
 
@@ -24,22 +25,26 @@ edit the scripts and re-run.
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-export GITHUB_TOKEN=ghp_xxx   # needs public_repo + read:user scopes
+export GITHUB_TOKEN=ghp_xxx   # needs public_repo + read:user scopes; or $(gh auth token)
 
 python scripts/generate_stats.py --login zaidbinnaveed
 python scripts/generate_headers.py
-python scripts/generate_portrait.py   # requires assets/portrait_source.*
+python scripts/generate_hero.py
+python scripts/generate_cards.py
+python scripts/generate_portrait.py   # optional; requires assets/portrait_source.*
 ```
 
 ## Repo layout
 
 ```
 .github/workflows/refresh.yml   daily Action: regenerate, commit if changed
-scripts/theme.py                shared palette / typography / font embedding
+scripts/theme.py                viridis palette / typography / font embedding
 scripts/github_api.py           GraphQL client (GITHUB_TOKEN only)
-scripts/generate_stats.py       stats.svg, langs.svg, year.svg, streak.svg
+scripts/generate_stats.py       stats.svg, langs.svg, year.svg
 scripts/generate_headers.py     section heading SVGs
-scripts/generate_portrait.py    animated ASCII portrait
+scripts/generate_hero.py        hero.svg: causal attention map over the name
+scripts/generate_cards.py       cards/*.svg: one evidence card per project
+scripts/generate_portrait.py    animated ASCII portrait (not shown in README)
 assets/fonts/                   subsetted JetBrains Mono (woff2)
 assets/                         generated output, committed by the Action
 ```
